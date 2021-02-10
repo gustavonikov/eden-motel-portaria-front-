@@ -1,0 +1,335 @@
+#page {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 30px;
+    margin: 50px auto;
+}
+
+.pessoais {
+    width: 470px;
+}
+
+.part1 {
+    margin-right: 60px;
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.part1 .diaria {
+    margin-left: 34px;
+}
+
+.part1 .diaria .select-block label {
+    font-size: 19px;
+}
+
+.part2 {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.part2 .veiculo {
+    width: 470px;
+}
+
+.part2 .observacao {
+    margin-left: 34px;
+    width: 400px;
+}
+
+.dashboard-container fieldset {
+    border: 0;
+    padding: 0 24px;
+}
+
+.dashboard-container .diaria fieldset {
+    margin-bottom: 75px;
+}
+
+.dashboard-container fieldset legend {
+    font: 700 24px Roboto;
+
+    color: var(--title-color);
+
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding-bottom: 16px;
+
+}
+
+.dashboard-container fieldset .input-block,
+.dashboard-container fieldset .double-input-block {
+    position: relative;
+}
+
+.dashboard-container fieldset .input-block + .input-block,
+.dashboard-container fieldset .select-block + .input-block {
+    margin-top: 25px;
+}
+
+.dashboard-container fieldset .input-block label,
+.dashboard-container fieldset .double-input-block label {
+    font-size: 19px;
+}
+
+.dashboard-container fieldset .input-block input,
+.dashboard-container fieldset .double-input-block input {
+    color: #322153;
+
+    height: 40px;
+    width: 100%;
+
+    font: 700;
+    font-size: 17px;
+
+    padding: 10px;
+    margin-top: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #322153;
+}
+
+.dashboard-container fieldset .double-input-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-container fieldset .double-input-block:last-child {
+    margin-top: 20px;
+}
+
+.dashboard-container fieldset .double-input-block .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard-container fieldset .double-input-block input {
+    width: 190px;
+}
+
+.dashboard-container fieldset .input-block textarea {
+    width: 100%;
+    height: 165px;
+    min-height: 100px;
+
+    padding: 10px;
+
+    font-size: 17px;
+
+    color: black;
+
+    border: 1px solid var(--title-color);
+    border-radius: 8px;
+
+    resize: vertical;
+}
+
+.dashboard-container fieldset .input-group {
+    margin-top: 15px;
+    
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-container fieldset .input-group .input-block {
+    margin-top: 10px;
+    width: 60%;
+}
+
+.dashboard-container fieldset .input-group .input-block + .input-block {
+    width: 30%;
+}
+
+.dashboard-container fieldset .input-group .select-block {
+    margin-top: 10px;
+    width: 48%;
+}
+
+
+.dashboard-container fieldset .select-block {
+    position: relative;
+    width: 350px;
+}
+
+.dashboard-container fieldset .select-block label {
+    font: 700 bold Roboto;
+    font-size: 20px;
+}
+
+.dashboard-container fieldset .select-block select {
+    height: 40px;
+    width: 100%;
+    
+    border-radius: 8px;
+    border: 1px solid #322153;
+
+    margin-top: 10px;
+    padding: 8px;
+
+    font-size: 17px;
+} 
+
+.dashboard-container fieldset .select-block label {
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+
+.dashboard-container fieldset .select-block .select-block {
+    color: #322153;
+
+    height: 40px;
+    width: 100%;
+
+    font: 700;
+    font-size: 16px;
+
+    margin-top: 14px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #322153;
+}
+
+.dashboard-container fieldset .input-block:focus-within::after {
+    width: (100% - 32px);
+    height: 2px;
+    content: "";
+    
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.button-wrapper .button-enterprise {
+    width: 220px;
+    height: 67px;
+
+    margin-right: 30px;
+
+    background-color: #111010;
+    color: #fff;
+
+    border: 0;
+    border-radius: 15px;
+
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 60px;
+
+    display: inline-block;
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: opacity 0.2s;
+
+    box-shadow: 0 4px 8px #111010;
+}
+
+.button-wrapper .button-enterprise:hover {
+    opacity: 0.9;
+}
+
+.cards-container {
+    width: 800px;
+
+    margin-left: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards-container h4 {
+    margin-bottom: 41px;
+
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+}
+
+.cards-container .cards-grid ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;;
+
+    text-align: center;
+}
+
+.cards-grid strong {
+    display: block;
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cards-grid span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cards-grid .card-available {
+    padding: 10px;
+
+    width: 116px;
+    height: 90px;
+
+    background-color: #37C77F;
+    list-style: none;
+    
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    box-shadow: 0 6px 12px #278657;
+}
+
+.cards-grid .card-occupied {
+    padding: 10px;
+
+    width: 116px;
+    height: 90px;
+
+    background-color: #f0405d;
+    list-style: none;
+    
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    box-shadow: 0 6px 12px #942739;
+}
+
+.cards-grid .card:first-child {
+    margin-top: 0;
+}

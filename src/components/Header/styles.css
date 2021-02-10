@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+#escopo {
+    background-color: rgba(241, 240, 240, 0.5);
+}
+
+#escopo header {
+    width: 100%;
+
+    padding: 30px 40px 30px 0px;
+    margin: 0 auto 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#escopo header img {
+    height: 120px;
+    width: 180px;
+
+    border-radius: 8px;
+
+    margin-left: 35px;
+}
+
+#escopo header p {
+    font: 400 50px Merriweather, sans-serif;
+
+    color: #2e8b57;
+}
+
+#escopo header span {
+    width: 180px;
+}
